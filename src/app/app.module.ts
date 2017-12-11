@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 
 import { AppComponent } from './app.component';
 
@@ -28,7 +30,8 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
     HttpModule,
 
     // ... and register it
-    ButtonsModule
+    ButtonsModule,
+    DropDownsModule
   ],
   bootstrap: [AppComponent]
 })
