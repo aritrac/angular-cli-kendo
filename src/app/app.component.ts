@@ -8,7 +8,16 @@ import { Component } from '@angular/core';
     </div>
     <div class="example-wrapper">
       <p>Favorite sport:</p>
-      <kendo-multiselect [data]="listItems" [autoClose]="false" [(ngModel)]="value"></kendo-multiselect>
+      <kendo-multiselect 
+      [data]="listItems" 
+      [autoClose]="false" 
+      [(ngModel)]="value">
+      <ng-template kendoMultiSelectItemTemplate let-dataItem>
+        <label id="{{dataItem}}"><input type="checkbox">{{dataItem}}
+  			<span class="checkmark"></span>
+		</label>
+      </ng-template>
+      </kendo-multiselect>
     </div>
   `
 })
