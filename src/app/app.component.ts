@@ -3,13 +3,16 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
+    <div class="example-config">
+      Current value: {{value | json}}
+    </div>
     <div class="example-wrapper">
-      <p>T-shirt size:</p>
-      <kendo-dropdownlist [data]="listItems">
-      </kendo-dropdownlist>
+      <p>Favorite sport:</p>
+      <kendo-multiselect [data]="listItems" [autoClose]="false" [(ngModel)]="value"></kendo-multiselect>
     </div>
   `
 })
 export class AppComponent {
-    public listItems: Array<string> = ["X-Small", "Small", "Medium", "Large", "X-Large", "2X-Large"];
+    public listItems: Array<string> = ['Baseball', 'Basketball', 'Cricket', 'Field Hockey', 'Football', 'Table Tennis', 'Tennis', 'Volleyball'];
+    public value: any = ['Baseball']
 }
