@@ -25,7 +25,9 @@
     "@progress/kendo-angular-intl": "^1.0.0",
     "@progress/kendo-angular-l10n": "^1.0.0",
     "@progress/kendo-theme-default": "^2.32.0",
+    "@progress/kendo-ui": "^2017.3.1116",
     "core-js": "^2.4.1",
+    "kendo-ui-core": "^2017.3.1206",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
